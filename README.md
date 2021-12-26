@@ -17,6 +17,9 @@ because of how Lua libraries work, you must first compile the libraries. instruc
 6. now you know how to compile that library
 7. ☻
 
+note that you must provide a lua and luajit folder, aswell as their .DLLs
+do NOT use a pre-compiled luajit DLL, i warn you, your computer may completely crash, i am not kidding
+
 # Using
 as mentioned earlier, based_lua contains a simple Lua to C interface. using this interface, loading based_lua modules is easy.
 here is an example that uses based_lua (the Lua to C interface), based_noise, and based_image. this example will create a noise image and store it in disk as a .BMP
