@@ -15,7 +15,8 @@
 // ---------------------------------------------------------- //
 /* Defines */
 
-#pragma once
+#ifndef lib_basedlua
+#define lib_basedlua
 
 //#define LUA_JIT // define this if you wish to compile for luajit (you will need to have a pre-compiled luajit DLL, compile it yourself or expect your whole computer to crash)
 #define BL_API
@@ -44,3 +45,4 @@ int bl_start(lua_State *L, const char *lib_name, const luaL_Reg *lib_funcs) { //
 	luaL_register(L, lib_name, lib_funcs);
 	return 1;
 };
+#endif
